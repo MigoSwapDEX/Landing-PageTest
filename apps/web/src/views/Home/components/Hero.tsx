@@ -131,7 +131,7 @@ const Hero = () => {
             {t('Amigos is a friend you love and trust.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Trade, earn, stake and win crypto on the most friendly DEX in the Metaverse.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
