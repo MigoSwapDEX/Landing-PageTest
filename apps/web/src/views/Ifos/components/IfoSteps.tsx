@@ -246,7 +246,7 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
   return (
     <Wrapper>
       <Heading id="ifo-how-to" as="h2" scale="xl" color="secondary" mb="24px" textAlign="center">
-        {t('How to Take Part in the Public Sale')}
+        {t('How to Take Part in the MigoSwap LaunchPAD')}
       </Heading>
       <Stepper>
         {stepsValidationStatus.map((_, index) => (
