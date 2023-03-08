@@ -50,9 +50,9 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('CAKE makes our world go round.'),
+  headingText: t('What is friendship without MIGO.'),
   bodyText: t(
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'MIGO token is at the heart of our ecosystem. Buy and stake it today!',
   ),
   reverse: false,
   primaryButton: {

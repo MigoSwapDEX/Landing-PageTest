@@ -48,7 +48,7 @@ const Stats = () => {
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
           {entrusting}
-          <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
+          {/* <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</> */}
           {inFunds}
         </Text>
       </Flex>
