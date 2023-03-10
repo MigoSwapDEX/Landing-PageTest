@@ -140,10 +140,11 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
   )
 }
 
-const Step2 = ({ hasProfile, isLive, isCommitted }: { hasProfile: boolean; isLive: boolean; isCommitted: boolean }) => {
+const Step2 = ({ hasProfile, isLive, isCommitted, step }: { hasProfile: boolean; isLive: boolean; isCommitted: boolean; step:number }) => {
   const { t } = useTranslation()
   return (
     <CardBody>
+      <>{step}</>
       <Heading as="h4" color="secondary" mb="16px">
         {t('Commit CAKE')}
       </Heading>
@@ -153,11 +154,11 @@ const Step2 = ({ hasProfile, isLive, isCommitted }: { hasProfile: boolean; isLiv
         )}{' '}
         <br />
       </Text>
-      {hasProfile && isLive && !isCommitted && (
-        <Button as="a" href="#current-ifo" mt="16px">
-          {t('Commit CAKE')}
-        </Button>
-      )}
+      {/* {hasProfile && isLive && !isCommitted && ( */}
+      <Button as="a" href="#current-ifo" mt="16px">
+        {t('Commit CAKE')}
+      </Button>
+      {/* )} */}
     </CardBody>
   )
 }
@@ -207,13 +208,15 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
         </Button>
       )
     }
-
     switch (step) {
+      default:
+        return <>{step}</>
       case 0:
         return (
           <CardBody>
+            <>{step}</>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Activate your Profilesss')}
+              {t('Activate your Profiles')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
               {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
@@ -223,30 +226,29 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
         )
       case 1:
         return <Step1 hasProfile={hasActiveProfile} />
-      case 2:
-        return <Step2 hasProfile={hasActiveProfile} isLive={isLive} isCommitted={isCommitted} />
-      case 3:
-        return (
-          <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
-              {t('Claim your tokens and achievement')}
-            </Heading>
-            <Text color="textSubtle" small>
-              {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE tokens will be returned to your wallet.',
-              )}
-            </Text>
-          </CardBody>
-        )
-      default:
-        return null
+      //
+      // case 2:
+      //   return <Step2 hasProfile={hasActiveProfile} isLive={isLive} isCommitted={isCommitted} />
+      // case 3:
+      //   return (
+      //     <CardBody>
+      //       <Heading as="h4" color="secondary" mb="16px">
+      //         {t('Claim your tokens and achievement')}
+      //       </Heading>
+      //       <Text color="textSubtle" small>
+      //         {t(
+      //           'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE tokens will be returned to your wallet.',
+      //         )}
+      //       </Text>
+      //     </CardBody>
+      //   )
     }
   }
 
   return (
     <Wrapper>
       <Heading id="ifo-how-to" as="h2" scale="xl" color="secondary" mb="24px" textAlign="center">
-        {t('How to Take Part in the MigoSwap LaunchPAD')}
+        {t('How to Take Part in the MigoSwap IDO')}
       </Heading>
       <Stepper>
         {stepsValidationStatus.map((_, index) => (
@@ -261,6 +263,9 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
           </Step>
         ))}
       </Stepper>
+      <Heading id="ifo-how-to" as="h2" scale="xl" color="secondary" m="24px" textAlign="center">
+        {t('Our IFO is coming soon...')}
+      </Heading>
     </Wrapper>
   )
 }

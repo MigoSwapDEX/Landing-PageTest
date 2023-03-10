@@ -185,12 +185,12 @@ const config: (
         },
         {
           label: t('Blog'),
-          href: 'https://medium.com/pancakeswap',
+          href: 'https://link.medium.com/GJqsmPsk0xb',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
         {
           label: t('Docs'),
-          href: 'https://docs.pancakeswap.finance',
+          href: 'https://migoswap.gitbook.io/migodoc/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),

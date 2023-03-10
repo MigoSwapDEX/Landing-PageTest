@@ -29,7 +29,7 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 600000,
     tokenImage: {
-      primarySrc: `/images/tokens/${bscTokens.cake.address}.svg`,
+      primarySrc: `/images/tokens/migo.svg`,//${bscTokens.cake.address}
       secondarySrc: '/images/tokens/autorenew.svg',
     },
   },
