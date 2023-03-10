@@ -11,10 +11,6 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         isHighlighted: true,
       },
       {
-        label: t("Brand"),
-        href: "https://docs.pancakeswap.finance/brand",
-      },
-      {
         label: t("Blog"),
         href: "https://medium.com/pancakeswap",
       },
@@ -36,10 +32,6 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         href: "https://docs.pancakeswap.finance/contact-us/customer-support",
       },
       {
-        label: t("Troubleshooting"),
-        href: "https://docs.pancakeswap.finance/help/troubleshooting",
-      },
-      {
         label: t("Guides"),
         href: "https://docs.pancakeswap.finance/get-started",
       },
@@ -55,18 +47,6 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
       {
         label: t("Documentation"),
         href: "https://docs.pancakeswap.finance",
-      },
-      {
-        label: t("Bug Bounty"),
-        href: "https://docs.pancakeswap.finance/code/bug-bounty",
-      },
-      {
-        label: t("Audits"),
-        href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
-      },
-      {
-        label: t("Careers"),
-        href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
       },
     ],
   },
