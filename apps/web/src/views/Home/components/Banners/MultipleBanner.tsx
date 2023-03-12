@@ -114,30 +114,31 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
   }, [bannerList, swiperRef])
 
   return (
-    <BannerPlaceHolder walletConnected={Boolean(account) && chainId === ChainId.BSC}>
-      <StyledSwiper
-        onSwiper={setSwiperRef}
-        modules={[Autoplay, Pagination, EffectFade]}
-        spaceBetween={50}
-        observer
-        slidesPerView={1}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
-        speed={500}
-        autoplay={{ delay: 5000, pauseOnMouseEnter: true, disableOnInteraction: false }}
-        loop
-        pagination={{ clickable: true }}
-      >
-        {bannerList.map((banner, index) => {
-          const childKey = `Banner${index}`
-          return (
-            <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0 }} key={childKey}>
-              {banner}
-            </SwiperSlide>
-          )
-        })}
-      </StyledSwiper>
-    </BannerPlaceHolder>
+    <></>
+    // <BannerPlaceHolder walletConnected={Boolean(account) && chainId === ChainId.BSC}>
+    //   <StyledSwiper
+    //     onSwiper={setSwiperRef}
+    //     modules={[Autoplay, Pagination, EffectFade]}
+    //     spaceBetween={50}
+    //     observer
+    //     slidesPerView={1}
+    //     effect="fade"
+    //     fadeEffect={{ crossFade: true }}
+    //     speed={500}
+    //     autoplay={{ delay: 5000, pauseOnMouseEnter: true, disableOnInteraction: false }}
+    //     loop
+    //     pagination={{ clickable: true }}
+    //   >
+    //     {bannerList.map((banner, index) => {
+    //       const childKey = `Banner${index}`
+    //       return (
+    //         <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0 }} key={childKey}>
+    //           {banner}
+    //         </SwiperSlide>
+    //       )
+    //     })}
+    //   </StyledSwiper>
+    // </BannerPlaceHolder>
   )
 }
 

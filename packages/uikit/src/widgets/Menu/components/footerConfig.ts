@@ -7,20 +7,20 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t("Contact"),
-        href: "https://docs.pancakeswap.finance/contact-us",
+        href: "https://migoswap.gitbook.io/migodoc/contact-us",
         isHighlighted: true,
       },
       {
         label: t("Blog"),
-        href: "https://medium.com/pancakeswap",
+        href: "https://medium.com/@migoswap",
       },
       {
         label: t("Community"),
-        href: "https://docs.pancakeswap.finance/contact-us/telegram",
+        href: "https://discord.gg/Yfbgv2MWv6",
       },
       {
         label: t("Litepaper"),
-        href: "https://v2litepaper.pancakeswap.finance/",
+        href: "#",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t("Customer Support"),
-        href: "https://docs.pancakeswap.finance/contact-us/customer-support",
+        href: "https://migoswap.gitbook.io/migodoc/customer-support",
       },
       {
         label: t("Guides"),
@@ -42,11 +42,11 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/MigoSwapDEX",
       },
       {
         label: t("Documentation"),
-        href: "https://docs.pancakeswap.finance",
+        href: "https://migoswap.gitbook.io/migodoc/",
       },
     ],
   },

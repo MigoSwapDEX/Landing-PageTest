@@ -6,7 +6,7 @@ import Image from 'next/legacy/image'
 import { ChainId } from '@pancakeswap/sdk'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/astronaut-bunny.png'
+import amigoesImage from '../../../../public/images/home/lunar-bunny/landingpageAmigos.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -148,7 +148,7 @@ const Hero = () => {
           position="relative"
         >
           <BunnyWrapper>
-            <Image src={bunnyImage} priority placeholder="blur" alt={t('Lunar bunny')} />
+            <Image src={amigoesImage} priority placeholder="blur" alt={t('Amigos')} />
           </BunnyWrapper>
           <StarsWrapper>
             <CompositeImage {...starsImage} />
