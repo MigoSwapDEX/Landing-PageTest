@@ -140,7 +140,17 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
   )
 }
 
-const Step2 = ({ hasProfile, isLive, isCommitted, step }: { hasProfile: boolean; isLive: boolean; isCommitted: boolean; step:number }) => {
+const Step2 = ({
+  hasProfile,
+  isLive,
+  isCommitted,
+  step,
+}: {
+  hasProfile: boolean
+  isLive: boolean
+  isCommitted: boolean
+  step: number
+}) => {
   const { t } = useTranslation()
   return (
     <CardBody>
@@ -174,6 +184,7 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
   const { t } = useTranslation()
   const { balance } = useTokenBalance(ifoCurrencyAddress)
   const stepsValidationStatus = [hasActiveProfile, balance.isGreaterThan(0), isCommitted, hasClaimed]
+  const ifoSteps = [1,2]
 
   const getStatusProp = (index: number): StepStatus => {
     const arePreviousValid = index === 0 ? true : every(stepsValidationStatus.slice(0, index), Boolean)
@@ -214,18 +225,34 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
       case 0:
         return (
           <CardBody>
-            <>{step}</>
+           
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Activate your Profiles')}
+              {t('Commit CORE')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
+              {t(
+                'Commit CORE to participate in this sale, incase of overflow left over SHDW will be returned back to users wallet',
+              )}
             </Text>
-            {renderAccountStatus()}
+            {/* {renderAccountStatus()} */}
           </CardBody>
         )
       case 1:
-        return <Step1 hasProfile={hasActiveProfile} />
+        return (
+          <CardBody>
+           
+            <Heading as="h4" color="secondary" mb="16px">
+              {t('Claim your tokens')}
+            </Heading>
+            <Text color="textSubtle" small mb="16px">
+              {t(
+                'After the Token sales is over, you can claim any tokens bought, and any unspent CORE tokens will be returned to your wallet.',
+              )}
+            </Text>
+            {/* {renderAccountStatus()} */}
+          </CardBody>
+        )
+      // <Step1 hasProfile={hasActiveProfile} />
       //
       // case 2:
       //   return <Step2 hasProfile={hasActiveProfile} isLive={isLive} isCommitted={isCommitted} />
@@ -251,7 +278,7 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
         {t('How to Take Part in the MigoSwap IDO')}
       </Heading>
       <Stepper>
-        {stepsValidationStatus.map((_, index) => (
+        {ifoSteps.map((_, index) => (
           <Step
             // eslint-disable-next-line react/no-array-index-key
             key={index}

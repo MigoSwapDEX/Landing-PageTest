@@ -22,7 +22,7 @@ const IfoPoolVaultCard = () => {
       ) : (
         <CakeVaultCard pool={cakePool} showSkeleton={false} showStakedOnly={false} showICake />
       )}
-      <IfoVesting pool={cakePool} />
+      {/* <IfoVesting pool={cakePool} /> */}<></>
     </Flex>
   )
 }
