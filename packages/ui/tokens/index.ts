@@ -71,5 +71,5 @@ export const tokens = {
   shadows,
 } as const
 
-export type Mode = 'light' | 'dark'
+export type Mode = 'dark' | 'dark'
 export type Tokens = typeof tokens

@@ -58,7 +58,7 @@ export const darkTheme = {
 export const lightTheme = {
   breakpoints,
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
       main: lightColors.primary,
       contrastText: lightColors.invertedContrast,

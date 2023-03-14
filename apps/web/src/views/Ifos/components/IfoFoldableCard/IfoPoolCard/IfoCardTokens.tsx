@@ -334,7 +334,6 @@ const IfoCardTokens: React.FC<React.PropsWithChildren<IfoCardTokensProps>> = ({
         </>
       )
     }
-
     if (publicIfoData.status === 'finished') {
       return amountTokenCommittedInLP.isEqualTo(0) ? (
         <Flex flexDirection="column" alignItems="center">
