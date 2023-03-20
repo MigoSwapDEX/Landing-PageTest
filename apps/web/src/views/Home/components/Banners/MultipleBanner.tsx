@@ -1,4 +1,4 @@
-import {useIsomorphicEffect } from '@pancakeswap/uikit' 
+import { useIsomorphicEffect } from '@pancakeswap/uikit'
 // import { useAccount } from 'wagmi'
 import { useState } from 'react'
 // import { ChainId } from '@pancakeswap/sdk'
@@ -102,8 +102,8 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
   const bannerList = useMultipleBannerConfig()
   // const { address: account } = useAccount()
   // const { isDesktop, isTablet } = useMatchBreakpoints()
-  // const { chainId } = useActiveChainId()
-  const [swiperRef, setSwiperRef] = useState<SwiperCore>(null)
+  // const { chainId } = useActiveChainId()setSwiperRef
+  const [swiperRef] = useState<SwiperCore>(null)
 
   useIsomorphicEffect(() => {
     if (swiperRef) {

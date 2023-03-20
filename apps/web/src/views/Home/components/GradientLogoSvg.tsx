@@ -1,6 +1,6 @@
-import { Svg, SvgProps } from '@pancakeswap/uikit'
+import { SvgProps } from '@pancakeswap/uikit'
 
-const GradientLogo: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
+const GradientLogo: React.FC<React.PropsWithChildren<SvgProps>> = () => {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_b_24_99)">

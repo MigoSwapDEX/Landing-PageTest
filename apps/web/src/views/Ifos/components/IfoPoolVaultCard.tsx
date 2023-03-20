@@ -4,7 +4,7 @@ import CakeVaultCard from 'views/Pools/components/CakeVaultCard'
 import { usePoolsWithVault } from 'state/pools/hooks'
 import { Token } from '@pancakeswap/sdk'
 import IfoPoolVaultCardMobile from './IfoPoolVaultCardMobile'
-import IfoVesting from './IfoVesting/index'
+// import IfoVesting from './IfoVesting/index'
 
 const IfoPoolVaultCard = () => {
   const { isXl, isLg, isMd, isXs, isSm } = useMatchBreakpoints()
