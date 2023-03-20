@@ -1,7 +1,7 @@
 import { Flex, Text, Button, Link, NextLinkFromReactRouter as RouterLink, OpenNewIcon } from '@pancakeswap/uikit'
 import styled, { keyframes } from 'styled-components'
-import Image from 'next/legacy/image'
-import tradeAnythingImage from '../../../../../public/images/home/trade/tradeAnything.png'
+// import Image from 'next/legacy/image'
+// import tradeAnythingImage from '../../../../../public/images/home/trade/tradeAnything.png'
 import CompositeImage, { CompositeImageProps } from '../CompositeImage'
 import ColoredWordHeading from '../ColoredWordHeading'
 
@@ -34,14 +34,14 @@ const SalesSection: React.FC<React.PropsWithChildren<SalesSectionProps>> = (prop
     transform: translate(0, 0px);
   }
 `
-  const TradeSectionWrapper = styled.div`
-    width: 100%;
-    animation: ${flyingAnim} 3.5s ease-in-out infinite;
-    will-change: transform;
-    > span {
-      overflow: visible !important; // make sure the next-image pre-build blur image not be cropped
-    }
-  `
+  // const TradeSectionWrapper = styled.div`
+  //   width: 100%;
+  //   animation: ${flyingAnim} 3.5s ease-in-out infinite;
+  //   will-change: transform;
+  //   > span {
+  //     overflow: visible !important; // make sure the next-image pre-build blur image not be cropped
+  //   }
+  // `
   return (
     <Flex flexDirection="column">
       <Flex

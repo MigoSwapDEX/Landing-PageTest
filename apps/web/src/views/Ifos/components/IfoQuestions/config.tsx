@@ -1,10 +1,10 @@
 import Trans from 'components/Trans'
-import styled from 'styled-components'
-import { Link } from '@pancakeswap/uikit'
+// import styled from 'styled-components'
+// import { Link } from '@pancakeswap/uikit'
 
-const InlineLink = styled(Link)`
-  display: inline;
-`
+// const InlineLink = styled(Link)`
+//   display: inline;
+// `
 
 const config = [
   {
