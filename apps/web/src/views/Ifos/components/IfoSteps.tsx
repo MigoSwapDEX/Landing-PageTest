@@ -79,7 +79,7 @@ const Wrapper = styled(Container)`
 //           },
 //         )}
 //       </Text>
-//       <InlineLink external href="https://docs.pancakeswap.finance/products/ifo-initial-farm-offering/icake">
+//       <InlineLink external href="https://migoswap.gitbook.io/migodoc/products/ifo-initial-farm-offering/icake">
 //         {t('Learn more about iCAKE')}
 //       </InlineLink>
 //     </Box>,

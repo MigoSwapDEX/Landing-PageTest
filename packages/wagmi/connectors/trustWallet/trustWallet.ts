@@ -17,6 +17,7 @@ const mappingNetwork: Record<number, string> = {
   5: 'eth-goerli',
   56: 'bsc-mainnet',
   97: 'bsc-testnet',
+  // 1116:'core',
 }
 
 export function getTrustWalletProvider() {

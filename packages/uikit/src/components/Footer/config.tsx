@@ -17,7 +17,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.pancakeswap.finance/contact-us",
+        href: "https://migoswap.gitbook.io/migodoc/contact-us",
       },
       {
         label: "Blog",
@@ -50,7 +50,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Guides",
-        href: "https://docs.pancakeswap.finance/get-started",
+        href: "https://migoswap.gitbook.io/migodoc/get-started",
       },
     ],
   },

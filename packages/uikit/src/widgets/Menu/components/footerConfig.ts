@@ -33,7 +33,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
       },
       {
         label: t("Guides"),
-        href: "https://docs.pancakeswap.finance/get-started",
+        href: "https://migoswap.gitbook.io/migodoc/get-started",
       },
     ],
   },
