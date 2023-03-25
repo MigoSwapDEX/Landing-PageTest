@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   InjectedModalProps,
-  Link,
   Modal,
   ExpertModal,
   PancakeToggle,
@@ -24,10 +23,10 @@ import {
   useSubgraphHealthIndicatorManager,
   useUserExpertModeAcknowledgementShow,
   useUserSingleHopOnly,
-  useUserUsernameVisibility,
+  // useUserUsernameVisibility,
   useZapModeManager,
 } from 'state/user/hooks'
-import { useUserTokenRisk } from 'state/user/hooks/useUserTokenRisk'
+// import { useUserTokenRisk } from 'state/user/hooks/useUserTokenRisk'
 import { useStableSwapByDefault } from 'state/user/smartRouter'
 import { useMMLinkedPoolByDefault } from 'state/user/mmLinkedPool'
 import styled from 'styled-components'
@@ -76,12 +75,12 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
   const [audioPlay, toggleSetAudioMode] = useAudioModeManager()
   const [zapMode, toggleZapMode] = useZapModeManager()
   const [subgraphHealth, setSubgraphHealth] = useSubgraphHealthIndicatorManager()
-  const [userUsernameVisibility, setUserUsernameVisibility] = useUserUsernameVisibility()
+  // const [userUsernameVisibility, setUserUsernameVisibility] = useUserUsernameVisibility()
   const { onChangeRecipient } = useSwapActionHandlers()
   const { chainId } = useActiveChainId()
   const [isStableSwapByDefault, setIsStableSwapByDefault] = useStableSwapByDefault()
   const [isMMLinkedPoolByDefault, setIsMMLinkedPoolByDefault] = useMMLinkedPoolByDefault()
-  const [tokenRisk, setTokenRisk] = useUserTokenRisk()
+  // const [tokenRisk, setTokenRisk] = useUserTokenRisk()
 
   const { t } = useTranslation()
   const { isDark, setTheme } = useTheme()
