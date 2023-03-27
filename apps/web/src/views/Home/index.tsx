@@ -75,7 +75,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             background: linear-gradient(180deg, #0b4576 0%, #091115 100%);
           }
           #home-4 .inner-wedge svg {
-            fill: #d8cbed;
+            fill: #201335;
           }
           [data-theme='dark'] #home-4 .inner-wedge svg {
             fill: #201335;
@@ -90,7 +90,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && chainId === ChainId.BSC && (
+        {account && chainId === ChainId.CORE && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
@@ -137,7 +137,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
         {/* TODO: until we are enable fetch multi-chain farms */}
-        {chainId === ChainId.BSC && <FarmsPoolsRow />}
+        {chainId === ChainId.CORE && <FarmsPoolsRow />}
       </PageSection>
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
