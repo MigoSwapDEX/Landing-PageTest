@@ -90,7 +90,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && chainId === ChainId.CORE && (
+        {account && chainId === ChainId.BSC && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
@@ -137,7 +137,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
         {/* TODO: until we are enable fetch multi-chain farms */}
-        {chainId === ChainId.CORE && <FarmsPoolsRow />}
+        {chainId === ChainId.BSC && <FarmsPoolsRow />}
       </PageSection>
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
